@@ -3,6 +3,7 @@ let submit = document.querySelector(".button")
 let notice = document.querySelector(".red")
 let success = document.querySelector(".success")
 let main = document.querySelector(".main")
+let message = document.querySelector(".message")
 email.addEventListener("input", () => {
     let userEmail = email.value
     if(userEmail.length < 5){
@@ -15,6 +16,7 @@ email.addEventListener("input", () => {
 // event listerner for submitting
 submit.addEventListener("click", (e) =>{
     let userEmail = email.value
+    message.textContent = userEmail
     const regex = /@gmail\.com$/;
     if(regex.test(userEmail)){
         email.style.border = "1px solid black";

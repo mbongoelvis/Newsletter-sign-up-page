@@ -109,6 +109,9 @@ label{
     padding: 2.2rem;
     display: none;
 }
+.message{
+    font-weight: 700;
+}
 .success img, h1, p{
     margin-bottom: 1.5rem;
 }
